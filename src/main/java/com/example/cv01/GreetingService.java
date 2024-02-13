@@ -1,2 +1,8 @@
-package com.example.cv01;public interface Cv01_GreetingServiceInterface {
+package com.example.cv01;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public interface GreetingService {
+    String sayGreeting();
 }
