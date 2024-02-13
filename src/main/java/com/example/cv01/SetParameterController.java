@@ -2,6 +2,7 @@ package com.example.cv01;
 
 import org.springframework.stereotype.Controller;
 
+@Controller
 public class SetParameterController {
     private Greeter greeter;
 
