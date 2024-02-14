@@ -5,12 +5,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class MyControllerTest {
-
+class InstanceAttributeControllerTest {
     @Autowired
-    MyController myController;
+    InstanceAttributeController controller;
+
     @Test
     void sayHello() {
-        System.out.println(myController.sayHello());
+        System.out.println(controller.sayHello());
     }
 }

@@ -1,14 +1,13 @@
 package com.example.cv01;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
 @Controller
 public class SetParameterController {
     private Greeter greeter;
 
-    public SetParameterController() {
-    }
-
+    @Autowired
     public void setGreeter(Greeter greeter) {
         this.greeter = greeter;
     }

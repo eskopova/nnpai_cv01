@@ -4,12 +4,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
 @Controller
-public class MyController {
+public class ParametricConstructorController {
     private final Greeter greeter;
 
     @Autowired
-    public MyController() {
-        this.greeter = new Greeter();
+    public ParametricConstructorController(Greeter greeter) {
+        this.greeter = greeter;
     }
 
     public String sayHello() {
